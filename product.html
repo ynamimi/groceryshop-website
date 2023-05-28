@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet"
+        href  = "style.css">
+        <link rel = "stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .container {
+            margin: 50px 50px 50px 5%;
+            width: 90%;
+            border-radius: 0 0 50px 50px;
+            text-align: center;
+            }
+
+            .categories {
+            width: max-content;
+            margin: 25px;
+            border-radius: 0 0 50px 50px;
+            display: inline-block;
+            background-color: #4b7973;
+            border: 1px solid #000000;
+            }
+
+            .categories:hover {
+            box-shadow: 0 0 10px 3px #184d47;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            .slides-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+        </style>
+            <script>
+                function stickyMenu() {
+                     var sticky=document.getElementById('sticky');
+                     if(window.pageYOffset > 220){
+                     sticky.classList.add('sticky');
+                     }
+                     else{
+                        sticky.classList.remove('sticky');
+                     }
+                }
+        
+                window.onscroll = function(){
+                    stickyMenu();
+                }
+
+                let slideIndex = 0;
+                showSlides();
+            </script>
+    </head>
+
+<body>
+
+<title> Products</title>
+<div class="parallax ">
+    <div class="page-title">Happy Fresh</div>
+</div>
+
+<div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <a href="index.html" class="a-menu"><li>Home</li></a>
+        <a href="product.html" class="a-menu"><li>Products</li></a>
+        <a href="loyalty.html" class="a-menu"><li>Memberships</li></a>
+        <a href="about.html" class="a-menu"><li>About Us</li></a>
+        <a href="list.html" class="a-menu"><li>Items</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." name="search"
+            class="search-input"/>
+            <button type="submit"><i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+    <br><h1><em>PRODUCTS</em></h1>
+<br>
+    <div class="container">
+        <a href="#vegetables">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="vegetable.png" class="item-image">
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="meat.png" class="item-image">
+                <div class="image-title">Poultry & Meet</div>
+            </div>
+        </a>
+        <a href="#frozen">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="frozen.png" class="item-image">
+                <div class="image-title">Frozen</div>
+            </div>
+        </a>
+        <a href="#health">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="health.png" class="item-image">
+                <div class="image-title">Health</div>
+            </div>
+        </a>
+        <a href="#fruits">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="fruits.png" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#bakery">
+            <div class="categories">
+                <img style="border-radius: 50%;" src="bakery.png" class="item-image">
+                <div class="image-title">Bakery</div>
+            </div>
+        </a>
+    </div>
+
+<br><h1><em>DEALS</em></h1>
+<br>
+
+<div class="slides-container">
+
+    <div class="mySlides">
+      <img src="1.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="2.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="4.png" style="width:100%">
+      </div>
+    
+    </div>
+    <br>
+
+    <p style="text-align: center"> &#169 All right reserved. <em>Happy Fresh Grocery Shop</em></p>
+   
+    </body>
+</html>

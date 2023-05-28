@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel = "stylesheet"
+    href  = "style.css">
+    <link rel = "stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.container {
+display: list-item;
+align-items: center;
+justify-content: center
+}
+
+img {
+max-width: 100%;
+border: 2px solid black;
+border-radius: 20%;
+}
+
+.text {
+font-size: 20px;
+padding-left: 20px;
+}
+
+</style>
+
+<script>
+
+function stickyMenu() {
+    var sticky=document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+            }
+}
+    
+indow.onscroll = function(){
+    stickyMenu();
+}
+    
+</script>
+</head>
+
+<body>
+
+    <title> Home </title>
+    <div class="parallax ">
+        <div class="page-title">Happy Fresh</div>
+    </div>
+
+<div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <a href="index.html" class="a-menu"><li>Home</li></a>
+        <a href="product.html" class="a-menu"><li>Products</li></a>
+        <a href="loyalty.html" class="a-menu"><li>Memberships</li></a>
+        <a href="about.html" class="a-menu"><li>About Us</li></a>
+        <a href="list.html" class="a-menu"><li>Items</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." name="search"
+            class="search-input"/>
+            <button type="submit"><i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+<br><br>
+
+<center>
+<iframe
+    width="600" height="345" src="https://www.youtube.com/embed/iVi_U6RpvHA?autoplay=1&mute=1">
+</iframe>
+</center>
+
+<br><h1><em>SERVICES</em></h1><br>
+
+<center>
+<div class="container">
+    <div class="image">
+      <img src="service1.jpg" width="300">
+    </div>
+    <div class="text">
+      <h4>Who will do my shopping?</h4>
+      <p>Your groceries will be selected and specially screened by professionally trained Personal Shoppers.</p>
+    </div><br>
+
+    <div class="image">
+        <img src="service2.jpg" width="300">
+    </div>
+    <div class="text">
+        <h4>How will my groceries be packed?</h4>
+        <p>Choose to checkout your groceries with our eco-friendly bag or even chiller bags while shopping at Happy Fresh Shop.</p>
+    </div><br>
+
+    <div class="image">
+        <img src="service3.jpg" width="300">
+    </div>
+    <div class="text">
+        <h4>How do I make payment?</h4>
+        <p>Make your payments online at Happy Fresh Shop so you can shop safe and pickup your groceries with minimal contact.</p>
+    </div><br>
+      
+    <div class="image">
+        <img src="service5.jpg" width="300">
+    </div>
+    <div class="text">
+        <h4>How do I contact you?</h4>
+        <p>For any further enquiries please contact +6011-11068681 for further assistance.</p>
+    </div><br>
+</div></center>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        
+    <link rel = "stylesheet"
+    href  = "style.css">
+    <link rel = "stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+        
+fieldset {
+    width: 60%;
+    background-color: rgb(247, 255, 255);
+    margin: auto;
+}
+
+.slides {
+    width: max-content;
+    margin: 25px;
+    display: inline-block;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 30%;
+    background-color: beige;
+}
+
+
+</style>
+
+<script>
+        
+function stickyMenu() {
+    var sticky=document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+        }
+}
+
+window.onscroll = function(){
+    stickyMenu();
+}
+    
+</script>
+</head>
+
+<body>
+
+    <title> Memberships</title>
+    <div class="parallax ">
+    <div class="page-title">Happy Fresh</div>
+    </div>
+
+<div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <a href="index.html" class="a-menu"><li>Home</li></a>
+        <a href="product.html" class="a-menu"><li>Products</li></a>
+        <a href="loyalty.html" class="a-menu"><li>Memberships</li></a>
+        <a href="about.html" class="a-menu"><li>About Us</li></a>
+        <a href="list.html" class="a-menu"><li>Items</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." name="search"
+            class="search-input"/>
+            <button type="submit"><i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+        
+<br><h1>Happy Fresh Loyalty Program</h1>
+
+<center>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; line-height: 2.0">Happy Fresh loyalty program promises a range of members-only privileges whenever they shop at Happy Fresh Grocery Shop. Points earned can be redeemed 
+<br>for cash vouchers, product treats, F&B vouchers, eco-friendly products as well as being donated to select charities or exchanged with participating partners’ points.
+<br> It is also an information platform to update customers on the latest in-store happenings and excite them with easy-to-follow monthly recipes. The Happy Fresh loyalty 
+<br>program has garnered in excess of 250,000 active members since its inception in 2018.</p>
+
+
+<div class="container">
+    <div class="slides">
+        <img src="reward1.png" class="item-image" style="width: 180px">
+    </div>
+
+    <div class="slides">
+        <img src="reward2.png" class="item-image" style="width: 180px">
+    </div>
+            
+    <div class="slides">
+        <img src="reward3.png" class="item-image" style="width: 180px">
+    </div>
+</div>
+
+</center><br><h1><em>MEMBERSHIP<br> REGISTRATION</em></h1>
+<br><br>
+        
+<form action="process.php" method="post" target="_blank" >
+    <fieldset>
+        <legend style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <b>REGISTRATION FORM</b></legend><br>
+
+        <label for="fname"><b>Full Name:</b></label>
+        <input type="text" id="fname" name="fname" style="width: 400px;"><br><br>
+        
+        <label for="gender"><b>Gender:</b></label>
+        <input type="radio" id="gender" name="gender" value="male"/> Male 
+        <input type="radio" id="gender" name="gender" value="female"/> Female <br><br> 
+                
+        <p><b>Address</b></p>
+        <label for="address1">Street line:</label>
+        <input type="text" id="address1" name="address1" style="width: 500px;"><br>
+        <label for="address2">Street line 2:</label>
+        <input type="text" id="address2" name="address2" style="width: 500px;"><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+        <label for="postal">Postal code/ Zipcode:</label>
+        <input type="text" id="postal" name="postal" style="width: 80px;"><br><br>
+        <label for="state">State:</label>
+        <select name="state">
+        <option value="choose" selected>Please select...</option>
+        <option value="Perlis">Perlis</option>
+        <option value="kedah" >Kedah</option>
+        <option value="penang">Pulau Pinang</option>
+        <option value="perak">Perak</option>
+        <option value="selangor">Selangor</option>
+        <option value="kl">Kuala Lumpur</option>
+        <option value="johor">Johor</option>
+        <option value="kelantan">Kelantan</option>
+        <option value="terengganu">Terengganu</option>
+        <option value="n9">Negeri Sembilan</option>
+        <option value="pahang">Pahang</option>
+        <option value="melaka">Melaka</option>
+        <option value="sarawak">Sarawak</option>
+        <option value="sabah">Sabah</option>
+        </select><br><br>
+        
+        <label for="date"><b>Date:</b></label>
+        <input type="date" id="Test_Date" value="dd//mm//yyyy"><br><br>
+        
+        <label for="time"><b>Time:</b></label>
+        <input type="time" id="Test_Time" value="--:-- --"><br><br>
+        
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" style="width: 400px;"><br><br>
+
+        <label for="phone"><b>Phone number:</b></label>
+        <input type="tel" id="phone" name="phone" placeholder="01234567890" pattern="[0-9]{10}" 
+        required><br><br>
+
+        <label for="language"><b>Membership Plan</b>:</label><br><br>
+        <input type="checkbox" name="1membership" value="yes">Student<br>
+        <input type="checkbox" name="3membership" value="yes">Individual<br>
+        <input type="checkbox" name="5membership" value="yes">Family<br><br>
+    </fieldset>
+
+
+    <br><br><center>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </center>
+</form><br><br>
+
+<p style="text-align: center"> &#169 All right reserved. <em>Happy Fresh Grocery Shop</em></p>
+    
+</body>
+</html>

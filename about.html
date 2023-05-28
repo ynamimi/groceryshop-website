@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+    <link rel = "stylesheet"
+    href  = "style.css">
+    <link rel = "stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.slides {
+    width: max-content;
+    margin: 25px;
+    display: inline-block;
+}
+        
+.image {
+    color: black;
+    font-family: 'Lucida Sans Unicode';
+}
+        
+img {
+    border: 3px solid #555;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    border-radius: 0 0 50px 50px;
+    text-align: center;
+}
+        
+fieldset {
+    width: 40%;
+    background-color: rgb(247, 255, 255);
+    margin: auto;
+}
+        
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+        
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+        
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+table, td, th {
+    border: 2px solid;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: bisque;
+}
+            
+</style>
+            
+<script>
+            
+function stickyMenu() {
+    var sticky=document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+            }
+}
+        
+window.onscroll = function(){
+    stickyMenu();
+}
+
+</script>
+</head>
+    
+<body>
+    
+    <title> About Us </title>
+    <div class="parallax ">
+    <div class="page-title">Happy Fresh</div>
+    </div>
+
+<div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <a href="index.html" class="a-menu"><li>Home</li></a>
+        <a href="product.html" class="a-menu"><li>Products</li></a>
+        <a href="loyalty.html" class="a-menu"><li>Memberships</li></a>
+        <a href="about.html" class="a-menu"><li>About Us</li></a>
+        <a href="list.html" class="a-menu"><li>Items</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." name="search"
+            class="search-input"/>
+            <button type="submit"><i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+    
+<br><h1><em>ABOUT US</em></h1><br>
+
+<center><p><b><em>The Happy Fresh Grocer story is one of healthy evolution and commitment to quality.</em></b></p>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; line-height: 2.0" >Our roots go way back 
+to the 1950s, with a small neighbourhood grocery store in Gombak, Kuala Lumpur. Forty years on, Pasaraya 
+<br>OTK was launched. This supermarket quickly became the go-to place for fresh produce,
+and two additional branches were opened
+<br> in Sentul (2000) and Puchong (2003). In 2004, Happy Fresh Grocer was born in Bangsar 
+Village with its premium selection of produce
+<br> continues to serve the residents of Bangsar and Kuala Lumpur with its large array of 
+fresh produce finest goods.Today, Happy Fresh Grocer is a
+<br> full-fledged chain of premium grocers across Penang, Klang Valley and Johor Bahru and 
+aims to be the leading premium supermarket chain
+<br>in Malaysia. However, we will always be rooted in our mission to be your neighbourhood 
+grocer with a passion to delight.<br><br></center>
+
+<h1><em>AWARDS</em></h1>
+        
+    <div class="container">
+        <div class="slides">
+            <img src="first.jpg" class="item-image" style="width: 180px">
+            <div class="image">The BrandLaureate<br>Best Brands Award<br>(Retail – Premium Grocer)
+            </div>
+        </div>
+          
+        <div class="slides">
+            <img src="second.jpg" class="item-image" style="width: 180px">
+            <div class="image">SCBEA 2020<br>(Retail & CSR <br>Excellence Award)
+            </div>
+        </div>
+        
+        <div class="slides">
+            <img src="third.jpg" class="item-image" style="width: 180px">
+            <div class="image">Retail Asia Award 2022<br>ESG Initiative of The Year<br>Malaysia
+            </div>
+        </div>
+          
+        <div class="slides">
+            <img src="fourth.jpg" class="item-image" style="width: 180px">
+            <div class="image">Star Outstanding Business<br>Award 2020<br>(Best in Retail – Gold)
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <br><br><h1><em>CONTACT US</em></h1>
+    </center>
+
+<form action="process.php" method="get" target="_blank">
+    <fieldset>
+        <div>
+            <label for="fname"><b>Full Name:</b></label><br>
+            <input type="text" id="fname" name="fname" style="width: 400px;"><br><br>
+
+            <label for="state"><b>State</b></label><br>
+            <select name="state">
+              <option value="choose" selected>Please select...</option>
+              <option value="Perlis">Perlis</option>
+              <option value="kedah" >Kedah</option>
+              <option value="penang">Pulau Pinang</option>
+              <option value="perak">Perak</option>
+              <option value="selangor">Selangor</option>
+              <option value="kl">Kuala Lumpur</option>
+              <option value="johor">Johor</option>
+              <option value="kelantan">Kelantan</option>
+              <option value="terengganu">Terengganu</option>
+              <option value="n9">Negeri Sembilan</option>
+              <option value="pahang">Pahang</option>
+              <option value="melaka">Melaka</option>
+              <option value="sarawak">Sarawak</option>
+              <option value="sabah">Sabah</option>
+            </select><br><br>
+      
+            <label for="date"><b>Date:</b></label><br>
+            <input type="date" id="Test_Date" value="dd//mm//yyyy"><br><br>
+
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+            <br><input type="submit" value="Submit">
+        </div>
+    </fieldset>
+</form>
+
+<center><br><br><h1><em>OUR STORES</em></h1>
+
+<table>
+    <tr>
+        <th>State</th>
+        <th>Location</th>
+        <th>Address</th>
+    </tr>
+
+    <tr>
+        <td>Kedah</td>
+        <td>3163 - (KH) Kompleks Perniagaan Pelangi</td>
+        <td>No: 19 & 20 (Ground Floor), Susuran Peremba 2, Kompleks Perniagaan Pelangi, Jalan Kuala Kedah, 05400 Alor Setar, Kedah Darul Aman.</td>
+    </tr>
+
+    <tr>
+        <td>Penang</td>
+        <td>2952 - (PG) Skyline City</td>
+        <td>No: 78 & 80 (Ground Floor), Lintang Sungai Pinang, Skyline City, 10150 George Town, Pulau Pinang.</td>
+    </tr>
+
+    <tr>
+        <td>Melaka</td>
+        <td>1640 - (ME) Taman Ayer Keroh Heights</td>
+        <td>No: 26 & 27 (Ground Floor), Lorong Setia 1, Taman Ayer Keroh Heights, 75450 Ayer Keroh, Melaka</td>
+    </tr>
+
+    <tr>
+        <td>Sabah</td>
+        <td>10313 - (SBH) Pavillion Bundusan</td>
+        <td>Lot No: B-9-G & B-10-G, Block B, Ground Floor, Pavillion Bundusan, Jalan Bundusan, 88300 Penampang, Sabah.</td>
+    </tr>
+
+    <tr>
+        <td>Selangor</td>
+        <td>2674 - Eco Grandeur</td>
+        <td>No: 5 & 7 (Ground Floor), Jalan Eco Grandeur 1/9, Eco Grandeur, 42300 Bandar Puncak Alam, Selangor Darul Ehsan.</td>
+    </tr>
+
+    <tr>
+        <td>Pahang</td>
+        <td>2160 - (PH) PP Corina, No: 78 & 80 (Ground Floor)</td>
+        <td>No: 19 & 21 (Ground Floor), Jalan PPC 1, Pusat Perniagaan Corina, Kampung Raja, 39010 Cameron Highlands, Pahang Darul Makmur.</td>
+    </tr>
+</table></center><br>
+
+    <p style="text-align: center"> &#169 All right reserved. <em>Happy Fresh Grocery Shop</em></p>
+
+</body>
+</html>

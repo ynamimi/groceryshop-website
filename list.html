@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet"
+        href  = "style.css">
+        <link rel = "stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .container {
+            margin: 50px 50px 50px 5%;
+            width: 90%;
+            border-radius:50px;
+            text-align: center;
+            }
+
+            .categories {
+            width: max-content;
+            margin: 25px;
+            border-radius:50px;
+            display: inline-block;
+            background-color: #9b4717;
+            border: 1px solid #000000;
+            }
+
+        </style>
+        <script>
+            function stickyMenu() {
+                 var sticky=document.getElementById('sticky');
+                 if(window.pageYOffset > 220){
+                 sticky.classList.add('sticky');
+                 }
+                 else{
+                    sticky.classList.remove('sticky');
+                 }
+            }
+    
+            window.onscroll = function(){
+                stickyMenu();
+            }
+    
+        </script>
+    </head>
+<body>
+
+    <title> Home </title>
+<div class="parallax ">
+    <div class="page-title">Happy Fresh</div>
+</div>
+
+<div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <a href="index.html" class="a-menu"><li>Home</li></a>
+        <a href="product.html" class="a-menu"><li>Products</li></a>
+        <a href="loyalty.html" class="a-menu"><li>Memberships</li></a>
+        <a href="about.html" class="a-menu"><li>About Us</li></a>
+        <a href="list.html" class="a-menu"><li>Items</li></a>
+    </ul>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="Search..." name="search"
+            class="search-input"/>
+            <button type="submit"><i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+        <div class="categories">
+            <img style="border-radius: 50%;" src="okra.jpg" class="item-image">
+            <div class="image-title">Okra</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="caulifflower.png" class="item-image">
+            <div class="image-title">Caulif Flower</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="greenpepper.jpeg" class="item-image">
+            <div class="image-title">Green Pepper</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="spinach.png" class="item-image">
+            <div class="image-title">Spinach</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="beef.jpg" class="item-image">
+            <div class="image-title">Beef</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="chicken.jpg" class="item-image">
+            <div class="image-title">Chicken</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="duck.jpg" class="item-image">
+            <div class="image-title">Duck</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="lamb.webp" class="item-image">
+            <div class="image-title">Lamb</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="listerine.jpg" class="item-image">
+            <div class="image-title">Listerine</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="vitamin.jpg" class="item-image">
+            <div class="image-title">Vitamin</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="meatball.jpg" class="item-image">
+            <div class="image-title">Meatball</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="nugget.jpg" class="item-image">
+            <div class="image-title">Nugget</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="gardenia.png" class="item-image">
+            <div class="image-title">Gardenia</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="nutella.jpg" class="item-image">
+            <div class="image-title">Nutella</div>
+        </div>
+
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="watermelon.jpg" class="item-image">
+            <div class="image-title">Watermelon</div>
+        </div>
+
+        <div class="categories">
+            <img style="border-radius: 50%;" src="apple.jpg" class="item-image">
+            <div class="image-title">Apple</div>
+        </div>
+</div>
+    <p style="text-align: center"> &#169 All right reserved. <em>Happy Fresh Grocery Shop</em></p>
+
+</body>
+</html>
